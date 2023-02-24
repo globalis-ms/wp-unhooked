@@ -58,6 +58,7 @@ define('WP_UNHOOKED_CONFIG', [
     'disable-taxonomy-post-format' => false,
     'disable-taxonomy-post-tag' => false,
     'disable-trackbacks' => false,
+    'disable-translation-install' => false,
     'disable-update-notices' => false,
     'disable-xmlrpc' => false,
 ]);
