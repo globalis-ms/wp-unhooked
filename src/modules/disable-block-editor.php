@@ -108,7 +108,7 @@ function disable_taxonomy_template_queries($terms, $wp_query)
 add_action(
     'wp_enqueue_scripts',
     function () {
-        wp_dequeue_style('wp-block-library'); // Wordpress block libaray styles
+        wp_dequeue_style('wp-block-library'); // Wordpress block library styles
         wp_dequeue_style('global-styles');// Wordpress global styles generated from theme.json
     }
 );
