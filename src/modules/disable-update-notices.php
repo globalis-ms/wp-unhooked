@@ -2,6 +2,11 @@
 
 namespace Globalis\WP\WPUnhooked;
 
+if (PHP_SAPI === 'cli') {
+    // Allow manual wp-cli updates
+    return;
+}
+
 remove_action('admin_init', '_maybe_update_core');
 remove_action('wp_version_check', 'wp_version_check');
 remove_action('load-plugins.php', 'wp_update_plugins');
